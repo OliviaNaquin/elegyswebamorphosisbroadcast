@@ -3,7 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>e l e g y f o r d r e a m s a n d t r o j a n p l a n e s</title>
+  <title></title>
+  <script>
+    // Define the text you want to roll in the title (add spaces at the end for spacing)
+    var rollText = "e l e g y f o r d r e a m s a n d t r o j a n p l a n e s - ";
+  
+    function scrollTitle() {
+      // Take the first character and move it to the end
+      rollText = rollText.substring(1) + rollText.substring(0, 1);
+      document.title = rollText;
+    
+      // Set the speed in milliseconds (e.g., 300ms is about 1/3 of a second)
+      setTimeout(scrollTitle, 200);
+    }
+  
+    // Start the title rolling when the page loads
+    scrollTitle();
+  </script>
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
