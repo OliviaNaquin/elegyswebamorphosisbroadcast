@@ -34,15 +34,17 @@ body {
 
 .main-content {
   background: rgb(84, 160, 231);
-  margin: 0 auto;
-    margin-bottom: 0px;
   display: flex;
   padding: 20px;
+  position: absolute;
   margin-bottom: 20px;
   margin-top: 17px;
   order: 2;
+  justify-content: center;
   height: 800px;
   width: 650px;
+  left: 490px;
+  top: 142px;
 }
 
 #right-contents-container {
