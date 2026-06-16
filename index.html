@@ -5,43 +5,59 @@
   <meta name="viewport" content="width=device-width">
   <title></title>
   <script>
-    // Define the text you want to roll in the title (add spaces at the end for spacing)
     var rollText = "e l e g y f o r d r e a m s a n d t r o j a n p l a n e s - ";
   
     function scrollTitle() {
-      // Take the first character and move it to the end
+      
       rollText = rollText.substring(1) + rollText.substring(0, 1);
       document.title = rollText;
     
-      // Set the speed in milliseconds (e.g., 300ms is about 1/3 of a second)
       setTimeout(scrollTitle, 200);
     }
   
-    // Start the title rolling when the page loads
     scrollTitle();
   </script>
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="themes/arden.css"/>
 </head>
 <body>
   <div id="all-contents-container">
-    <header>
-      <h1>elegyfordreamsandtrojanplanes' website</h1>
-    </header>
-    <aside class="other-contents-container">
+    <div id="header-container">
+        <header>
+          <h1>elegyfordreamsandtrojanplanes' website</h1>
+        </header>
+    </div>
+    <main>
+    <aside id="left-contents-container">
       <nav id="website-links">
         <ul id="nav-ul">
           <li class="nav-li">
-          <a href="index.html">HOME</a>
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="nav-li">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-li">
+            <a href="artgallery.html">ART GALLERY</a>
           </li>
         </ul>
       </nav>
+      <div id="music-player-container">
+        <div id="music-player">
+          <p>music</p>
+        </div>
+      </div>
     </aside>
-    <main class="main-content">
+    <div class="main-content">
+      <div>
       <h1>Welcome internet surfer!</h1>
         <span>I'm afraid this website is still under construction! Check back for more updates!!</span>
-    </main>
-    <aside class="other-contents-container">
+      </div>
+    </div>
+    <aside id="right-contents-container">
+      <h3>Right Sidebar</h3>
     </aside>
+    </main>
   </div>
 </body>
 </html>
